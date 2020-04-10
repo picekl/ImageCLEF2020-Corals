@@ -2,6 +2,8 @@
 
 
 flickr_scraper/
+resources/tf_records/
+resources/training_images/
 
 *.jpg
 *.jpeg

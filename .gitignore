@@ -4,6 +4,8 @@
 flickr_scraper/
 resources/tf_records/
 resources/training_images/
+resources/models/
+resources/tfrecords/
 
 *.jpg
 *.jpeg

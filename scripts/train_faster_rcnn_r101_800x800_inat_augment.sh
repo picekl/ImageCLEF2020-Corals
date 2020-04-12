@@ -1,9 +1,9 @@
 #!/bin/sh
 
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=0
 
-CHECKPOINT_DIR=../checkpoints/faster_rcnn_r50_800x800_1000
-CONFIG_PATH=../configs/pipeline_faster_rcnn_resnet50_800x800_1000.config
+CHECKPOINT_DIR=../checkpoints/pipeline_faster_rcnn_resnet101_800x800_inat_augment
+CONFIG_PATH=../configs/pipeline_faster_rcnn_resnet101_800x800_inat_augment.config
 CHECKPOINT_STEPS=500
 
 python ../object_detection/model_main.py \

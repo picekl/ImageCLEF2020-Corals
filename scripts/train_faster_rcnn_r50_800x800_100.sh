@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 CHECKPOINT_DIR=../checkpoints/faster_rcnn_r50_800x800_100
 CONFIG_PATH=../configs/pipeline_faster_rcnn_resnet50_800x800_100.config

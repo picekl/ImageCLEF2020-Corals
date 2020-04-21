@@ -7,6 +7,9 @@ resources/training_images/
 resources/models/
 resources/tfrecords/
 
+resources/
+checkpoints/
+
 *.jpg
 *.jpeg
 *.png

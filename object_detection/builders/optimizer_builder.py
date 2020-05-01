@@ -16,6 +16,8 @@
 """Functions to build DetectionModel training optimizers."""
 
 import tensorflow as tf
+from tensorpack.tfutils import optimizer as opt_utils
+import runai.ga
 
 
 from object_detection.utils import learning_schedules
@@ -74,6 +76,8 @@ def build(optimizer_config, global_step=None):
     optimizer = tf.contrib.opt.MovingAverageOptimizer(
         optimizer, average_decay=optimizer_config.moving_average_decay)
 
+  optimizer = opt_utils.AccumGradOptimizer(optimizer, 8)
+  #optmizer = runai.ga.keras.optimizers.Adam(steps=global_step)
   return optimizer, summary_vars
 
 

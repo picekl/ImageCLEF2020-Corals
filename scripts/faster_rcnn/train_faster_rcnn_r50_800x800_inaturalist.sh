@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=1
 
-CHECKPOINT_DIR=~/coral/model/out_faster_rcnn_r50_800x800_inaturalist
+CHECKPOINT_DIR=../checkpoints/800x800_inaturalist/
 CONFIG_PATH=../configs/pipeline_faster_rcnn_resnet50_800x800_inaturalist.config
 CHECKPOINT_STEPS=500
 
